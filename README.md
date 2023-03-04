@@ -2,4 +2,4 @@
 
 Live website at:
 
-https://pritul2.github.io/pritul-dave.github.io/
+https://pritul2.github.io/portfolio/

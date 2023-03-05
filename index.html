@@ -61,7 +61,7 @@
     <!--==================== MAIN ====================-->
     <main class="main">
         <!--==================== HOME ====================-->
-        <section class="home section" id="home">
+        <section class="home section" id="home"  data-aos="fade-right">
             <div class="home_container container grid">
                 <div class="home_content grid">
 
@@ -112,7 +112,7 @@
         </section>
 
         <!--==================== ABOUT ====================-->
-        <section class="about section" id="about">
+        <section class="about section" id="about"  data-aos="fade-right">
             <h2 class="section__title">About Me</h2>
             <span class="section__subtitle">My Introduction</span>
             <div class="about__container container grid">
@@ -146,7 +146,7 @@
         </section>
 
                 <!--==================== PORTFOLIO ====================-->
-                <section class="portfolio section" id="portfolio">
+                <section class="portfolio section" id="portfolio"  data-aos="fade-right">
                     <h2 class="section__title">Project Portfolio</h2>
                     <span class="section__subtitle">Most recent work</span>
                     <div class="mySwiper portfolio__container container">
@@ -303,7 +303,7 @@
                     </div>
                 </section>
         <!--==================== SKILLS ====================-->
-        <section class="skills section" id="skills">
+        <section class="skills section" id="skills"  data-aos="fade-right">
             <h2 class="section__title">Skills</h2>
             <span class="section__subtitle">My technical level</span>
             <div class="skills__container container grid">
@@ -445,7 +445,7 @@
         </section>
 
         <!--==================== QUALIFICATION ====================-->
-        <section class="qualification section"  id="qualification">
+        <section class="qualification section"  id="qualification"  data-aos="fade-right">
             <h2 class="section__title">Qualifications</h2>
             <span class="section__subtitle">My educational and professional journey</span>
             <div class="qualification__container container">
@@ -593,7 +593,7 @@
         </section>
 
         <!--==================== CONTACT ME ====================-->
-        <section class="contact section" id="contact">
+        <section class="contact section" id="contact"  data-aos="fade-right">
             <h2 class="section__title">Contact Me</h2>
             <span class="section__subtitle">Get in touch</span>
 
@@ -649,7 +649,7 @@
     </main>
 
     <!--==================== FOOTER ====================-->
-    <footer class="footer">
+    <footer class="footer"  data-aos="fade-right">
         <div class="footer__bg">
             <div class="footer__container container grid">
                 <div class="footer__information">
@@ -687,6 +687,12 @@
 
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+  duration: 1200,
+})
+    </script>
     
 </body>
 

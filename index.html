@@ -30,27 +30,32 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">
+                        <a href="#home" class="nav__link active-link ">
                             <i class="uil uil-estate nav__icon"></i> Home
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#about" class="nav__link">
+                        <a href="#about" class="nav__link ">
                             <i class="uil uil-user nav__icon"></i> About
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#portfolio" class="nav__link">
+                        <a href="#portfolio" class="nav__link ">
                             <i class="uil uil-scenery nav__icon"></i> Portfolio
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#skills" class="nav__link">
+                        <a href="#skills" class="nav__link ">
                             <i class="uil uil-file-alt nav__icon"></i> Skills
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#contact" class="nav__link">
+                        <a href="#qualification" class="nav__link ">
+                            <i class="uil uil-message nav__icon"></i> Qualification
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link ">
                             <i class="uil uil-message nav__icon"></i> Contactme
                         </a>
                     </li>
@@ -104,7 +109,7 @@
                         <h1 class="profile_title">Hi! I am Pritul Dave</h1>
                         <h3 class="profile_subtitle">Aspiring Software Development Engineer</h3>
                         <p class="profile_description">I loves Book Reading, Coding Challenges, Wrangling Data,
-                            Statistical Modelling, AI & Web3</p>
+                            Web Development, AI & World of Web3</p>
                         <a href="#contact" class="button button--flex">
                             Contact Me <i class="uil uil-message button__icon"></i>
                         </a>
@@ -114,26 +119,27 @@
         </section>
 
         <!--==================== ABOUT ====================-->
-        <section class="about section" id="about"  data-aos="fade-left">
+        <section class="about section" id="about"  data-aos="fade-left" tabindex="0">
             <h2 class="section__title">About Me</h2>
             <span class="section__subtitle">My Introduction</span>
             <div class="about__container container grid">
-                <img src="assets/img/profile-pic.png" alt="" class="about__img">
+                <img src="assets/img/picture2.jpg" alt="" class="about__img">
                 <div class="about__data">
                     <p class="about__description">
-                        As a post-grad CS student, I use tech to tackle complex problems. I excel in ML, software development, data science, computer vision, and NLP.
+                        As a post-grad CS student, I use tech to tackle complex problems. I excel in ML, software & web development, data science, computer vision, and NLP.
                     </p>
+
                     <div class="about__info">
                         <div>
-                            <span class="info__title">2.5+</span>
+                            <span class="info__title exp_yrs"></span>
                             <span class="info__name">Years <br> Experience</span>
                         </div>
                         <div>
-                            <span class="info__title">12+</span>
+                            <span class="info__title prj_cnt"></span>
                             <span class="info__name">Completed <br /> Projects</span>
                         </div>
                         <div>
-                            <span class="info__title">06+</span>
+                            <span class="info__title cmpnies_cnt"></span>
                             <span class="info__name">Companies <br />Worked </span>
                         </div>
                     </div>
@@ -299,6 +305,8 @@
                                     </div>
                                 </div>
                             </swiper-slide>
+
+                            
         
                         </swiper-container>
         
@@ -333,7 +341,30 @@
                         </div>
                     </div>
                 </div>
-
+                <div class="skills__content skills__close">
+                    <!--Skill 5-->
+                    <div class="skills__header">
+                        <i class="uil uil-window skills__icon"></i>
+                        <div>
+                            <h1 class="skills__title">Web Frameworks</h1>
+                            <span class="skills__subtitle"></span>
+                        </div>
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__title">
+                                <h3 class="skills__name">Flask</h3>
+                            </div>
+                            <div class="skills__title">
+                                <h3 class="skills__name">Django</h3>
+                            </div>
+                            <div class="skills__title">
+                                <h3 class="skills__name">Aiohttp</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="skills__content skills__close">
                     <!--Skill 2-->
                     <div class="skills__header">
@@ -364,7 +395,7 @@
                         </div>
                     </div>
                 </div>
-
+                
 
                 <div class="skills__content skills__close">
                     <!--Skill 3-->
@@ -415,13 +446,12 @@
                     </div>
                 </div>
 
-
                 <div class="skills__content skills__close">
-                    <!--Skill 5-->
+                    <!--Skill 4-->
                     <div class="skills__header">
-                        <i class="uil uil-html5 skills__icon"></i>
+                        <i class="uil uil-robot skills__icon"></i>
                         <div>
-                            <h1 class="skills__title">Web Frameworks</h1>
+                            <h1 class="skills__title">Machine Learning Libraries</h1>
                             <span class="skills__subtitle"></span>
                         </div>
                         <i class="uil uil-angle-down skills__arrow"></i>
@@ -429,17 +459,32 @@
                     <div class="skills__list grid">
                         <div class="skills__data">
                             <div class="skills__title">
-                                <h3 class="skills__name">Flask</h3>
+                                <h3 class="skills__name">Tensorflow</h3>
                             </div>
                             <div class="skills__title">
-                                <h3 class="skills__name">Django</h3>
+                                <h3 class="skills__name">Keras</h3>
                             </div>
                             <div class="skills__title">
-                                <h3 class="skills__name">Aiohttp</h3>
+                                <h3 class="skills__name">Pandas</h3>
+                            </div>
+                            <div class="skills__title">
+                                <h3 class="skills__name">Scikit Learn</h3>
+                            </div>
+                            <div class="skills__title">
+                                <h3 class="skills__name">OpenCV</h3>
+                            </div>
+                            <div class="skills__title">
+                                <h3 class="skills__name">NLTK</h3>
+                            </div>
+                            <div class="skills__title">
+                                <h3 class="skills__name">SpaCy</h3>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
+                
 
 
 
@@ -523,12 +568,10 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="qualification__data">
-                            <!--Content 1 -->
                             <div>
-                                <h3 class="qualification__title">Software Developer Intern</h3>
-                                <span class="qualification__subtitle">Awto.ai</span>
+                                <h3 class="qualification__title">Research Intern</h3>
+                                <span class="qualification__subtitle">CogniAble AI</span>
                                 <div class="qualification__calender">
                                     <i class="uil uil-calendar-alt qualification__date__icon"></i>
                                     2020 - 2020
@@ -541,11 +584,25 @@
                         </div>
 
                         <div class="qualification__data">
-                            <div></div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
+                            <!--Content 1 -->
+                                <div></div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                                <div>
+                                <h3 class="qualification__title">Software Developer Intern</h3>
+                                <span class="qualification__subtitle">Awto.ai</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt qualification__date__icon"></i>
+                                    2020 - 2020
+                                </div>
+                                </div>
+                            
+                        </div>
+
+                        <div class="qualification__data">
+                            
                             <div>
                                 <h3 class="qualification__title">Software Developer Intern</h3>
                                 <span class="qualification__subtitle">Millitary College of Telecom & Engineering</span>
@@ -554,11 +611,20 @@
                                     2020 - 2021
                                 </div>
                             </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
                         </div>
 
                         <div class="qualification__data">
                             <!--Content 1 -->
-                            <div>
+                                <div></div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                                <div>
                                 <h3 class="qualification__title">Software Developer Intern</h3>
                                 <span class="qualification__subtitle">GeekyBee AI</span>
                                 <div class="qualification__calender">
@@ -566,18 +632,9 @@
                                     2019 - 2019
                                 </div>
                             </div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
                         </div>
 
                         <div class="qualification__data">
-                            <div></div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
                             <div>
                                 <h3 class="qualification__title">Software Developer Intern</h3>
                                 <span class="qualification__subtitle">Volansys ACL Digital LLC</span>
@@ -585,6 +642,10 @@
                                     <i class="uil uil-calendar-alt"></i>
                                     2018 - 2018
                                 </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
                             </div>
                         </div>
 
@@ -660,13 +721,16 @@
                 </div>
                 <ul class="footer__links">
                     <li>
-                        <a href="#qualification" class="footer__link">Education</a>
+                        <a href="#about" class="footer__link">Curriculum vitae</a>
                     </li>
                     <li>
                         <a href="#portfolio" class="footer__link">Portfolio</a>
                     </li>
                     <li>
                         <a href="#skills" class="footer__link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#qualification" class="footer__link">Qualification</a>
                     </li>
                 </ul>
             <div class="footer__socials">

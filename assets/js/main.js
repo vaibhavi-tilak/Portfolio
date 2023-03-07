@@ -77,12 +77,51 @@ tabs.forEach(tab =>{
 
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+const sections = document.querySelectorAll('section[id]')
 
+function scrollActive(){
+    const scrollY = window.pageYOffset
 
+    sections.forEach(current =>{
+        const sectionHeight = current.offsetHeight
+        const sectionTop = current.offsetTop - 60;
+        sectionId = current.getAttribute('id')
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+        }else{
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+        }
+    })
+}
+window.addEventListener('scroll', scrollActive)
+  
 /*==================== CHANGE BACKGROUND HEADER ====================*/ 
 
 
 /*==================== SHOW SCROLL UP ====================*/ 
+
+// get the counter section element
+const counterSection = document.querySelector('.about');
+
+// detect when the section is in view
+function isSectionInView() {
+  const sectionTop = counterSection.getBoundingClientRect().top;
+  const sectionBottom = counterSection.getBoundingClientRect().bottom;
+  const windowHeight = window.innerHeight;
+  return (sectionTop < windowHeight && sectionBottom > 0);
+}
+
+// add a class to trigger the animation when the section is in view
+function animateCounter() {
+  if (isSectionInView()) {
+    counterSection.classList.add('animate');
+  }
+}
+
+// run the animateCounter function on load and scroll events
+window.addEventListener('load', animateCounter);
+window.addEventListener('scroll', animateCounter);
 
 
 /*==================== DARK LIGHT THEME ====================*/ 

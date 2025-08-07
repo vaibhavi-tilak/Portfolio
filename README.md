@@ -3,4 +3,4 @@
 Live website at:
 
 
-https://vaibhavi-tilak.github.io/web2/
+https://github.com/vaibhavi-tilak/Portfolio

@@ -1,5 +1,6 @@
-# pritul-dave.github.io
+# vaibhavi.tilak.github.io
 
 Live website at:
 
-https://pritul2.github.io/portfolio/
+
+https://vaibhavi-tilak.github.io/web2/
